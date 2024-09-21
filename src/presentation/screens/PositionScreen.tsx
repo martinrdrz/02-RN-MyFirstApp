@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
     height: 100,
     backgroundColor: '#F0A23B',
     borderWidth: 10,
+    position: 'relative',
     borderColor: 'white',
   },
   greenBox: {
@@ -41,11 +42,11 @@ const styles = StyleSheet.create({
     backgroundColor: 'green',
     borderWidth: 10,
     borderColor: 'white',
+    ...StyleSheet.absoluteFillObject,
     position: 'absolute',
     // bottom: 0,
     // right: 0,
     // top: 0,
     // left: 0,
-    ...StyleSheet.absoluteFillObject,
   },
 });
